@@ -1,25 +1,71 @@
+// Variables
+$base-color: #51b0d3;
+$secondary-color: #1c4261;
+$text-color:#1d6295;
+@font-face {
+    font-family: 'NeoSansArabic';
+    src: url("../fonts/Neo Sans Arabic Regular.ttf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'NeoSansArabic';
+    src: url("../fonts/Neo_Sans_Medium.ttf");
+    font-weight: 500;
+}
+
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 
+* {
+    font-family: NeoSansArabic;
+}
+
 body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    height: 1500px;
     background-color: white;
+}
+
+select {
+    direction: rtl !important;
+}
+
+.section-title {
+    font-size: 18px;
+    color: $text-color;
+    font-weight: 500;
+}
+
+.section-text {
+    font-size: 16px;
 }
 
 .card {
     background-color: #f3f7fa !important;
     border: none !important;
-}
-
-.section-card {
-    background-color: white !important;
-    border: none !important;
+    .section-card {
+        background-color: white !important;
+        border: none !important;
+    }
+    .card-title {
+        font-size: 18px;
+        color: $text-color;
+    }
+    .card-text {
+        font-size: 16px;
+    }
 }
 
 .Section {
     background-color: #f3f7fa;
+}
+
+.btn-secondColor {
+    background-color: $text-color !important;
+    color: white !important;
+    width: 90px;
+    padding: 10px;
 }
 
 // componets
@@ -31,12 +77,17 @@ body {
     i {
         font-size: 30px;
         color: #51b0d3;
-        margin-left: 120px;
     }
     hr {
-        height: 8px;
-        width: 100%;
-        background: gray;
+        // width: 950px;
+        border-top: 1px dotted gainsboro;
+        margin: 1;
+        // margin: 1px 0 1px -150px;
+    }
+    p {
+        color: $secondary-color;
+        font-size: 20px;
+        font-weight: bold;
     }
 }
 
@@ -50,11 +101,70 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+// navbar
+.navbar {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px !important;
+    font-weight: 500;
+    .nav-item {
+        margin-left: 20px;
+    }
+}
+
+.icons-navbar {
+    i {
+        margin-left: -18px !important;
+        padding: 10px;
+        font-size: 17px;
+        color: white;
+        background-color: $text-color;
+        border-radius: 50%;
+    }
+    img {
+        height: 55px;
+        width: 100%;
+    }
+    .box {
+        font-size: 16px;
+        width: 249px;
+        height: 46px;
+        padding: 7px;
+        background-color: #1d6295;
+        color: white;
+        border-radius: 7px;
+        line-height: 0.3;
+        text-align: right;
+    }
+}
+
+// end of nav bar
 
 /* Carousel base class */
 
 .carousel {
+    margin-top: 10px;
     margin-bottom: 4rem;
+    @media (min-width: 768px) {
+        .carousel-control-prev-icon {
+            padding: 20px;
+            margin-top: 250px;
+            margin-left: 200px;
+            background-color: black;
+            filter: invert(1);
+            height: 10%;
+            width: 50%;
+        }
+        .carousel-control-next-icon {
+            padding: 20px;
+            margin-top: 250px;
+            margin-right: 200px;
+            background-color: black;
+            filter: invert(1);
+            height: 10%;
+            width: 50%;
+        }
+    }
 }
 
 
@@ -110,8 +220,29 @@ body {
 }
 
 // end of first section
-.section4 {
-    position: relative;
+// 2nd section
+//end of 2nd section
+// section 3
+.section3 {
+    .card {
+        height: 450px;
+    }
+}
+
+// end of section 3
+.forthSection,
+firstSection {
+    @media (min-width: 768px) {
+        .text-section {
+            position: relative;
+            display: flex;
+            .text-content {
+                position: absolute;
+                right: 0;
+                bottom: -120;
+            }
+        }
+    }
 }
 
 .section4img {
@@ -154,10 +285,10 @@ body {
     }
     .list-group-section5 .list-group-item {
         font-weight: bold;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #1c4261;
-        border-top: 1px solid #1c4261;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $text-color;
+        border-top: 1px solid $text-color;
         border-left-color: #fff;
         border-right-color: #fff;
     }
@@ -173,6 +304,9 @@ body {
 
 .section7 {
     height: 300px;
+    .card {
+        background: none !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -187,13 +321,14 @@ body {
 }
 
 
-/* Start Features */
+/* Start doctors */
 
-.features {
-    padding: 100px 0 60px
+.doctors {
+    margin-top: 30px;
+    padding: 30px 0;
 }
 
-.features i {
+.doctors i {
     background-color: #1c4261;
     color: #FFF;
     margin-bottom: 10px;
@@ -202,19 +337,81 @@ body {
     line-height: 75px;
 }
 
-.features h3 {
+.doctors h3 {
     color: black;
     font-size: 22px;
 }
 
-.features p {
+.doctors p {
     color: #989898;
     margin-bottom: 40px
 }
 
 
-/* End Features */
+/* End doctors */
 
+// start of footer
+footer {
+    margin-top: 70px;
+    .footerbg1 {
+        background-color: #f9f9f9;
+    }
+    .footerbg2 {
+        background-color: #f2f2f2;
+    }
+    .footerbg3 {
+        background-color: white;
+    }
+    .footer-up {
+        // background-color: ;
+        padding: 15px;
+        max-height: 110px;
+        i {
+            font-size: 30px;
+            margin: 15px;
+        }
+        .input {
+            width: 250px;
+        }
+    }
+    .footer-down {
+        // background-color: #f2f2f2;
+        padding: 10px;
+        max-height: 60px;
+        i {
+            padding: 7px;
+            font-size: 16px;
+            margin: 3px;
+            background-color: #51b0d3;
+            color: white;
+            border-radius: 50%;
+        }
+        li a {
+            color: $text-color;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+    .footer3 {
+        color: $base-color;
+        font-size: 15px;
+        justify-content: space-between;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-section {
+        position: relative;
+        .text-content {
+            position: absolute;
+            right: 0;
+            bottom: -40;
+        }
+    }
+}
+
+// end of footer
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

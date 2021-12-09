@@ -1,10 +1,38 @@
+@font-face {
+  font-family: 'NeoSansArabic';
+  src: url("../fonts/Neo Sans Arabic Regular.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'NeoSansArabic';
+  src: url("../fonts/Neo_Sans_Medium.ttf");
+  font-weight: 500;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
+* {
+  font-family: NeoSansArabic;
+}
+
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  height: 1500px;
   background-color: white;
+}
+
+select {
+  direction: rtl !important;
+}
+
+.section-title {
+  font-size: 18px;
+  color: #1d6295;
+  font-weight: 500;
+}
+
+.section-text {
+  font-size: 16px;
 }
 
 .card {
@@ -12,13 +40,29 @@ body {
   border: none !important;
 }
 
-.section-card {
+.card .section-card {
   background-color: white !important;
   border: none !important;
 }
 
+.card .card-title {
+  font-size: 18px;
+  color: #1d6295;
+}
+
+.card .card-text {
+  font-size: 16px;
+}
+
 .Section {
   background-color: #f3f7fa;
+}
+
+.btn-secondColor {
+  background-color: #1d6295 !important;
+  color: white !important;
+  width: 90px;
+  padding: 10px;
 }
 
 .divider {
@@ -31,13 +75,17 @@ body {
 .divider i {
   font-size: 30px;
   color: #51b0d3;
-  margin-left: 120px;
 }
 
 .divider hr {
-  height: 8px;
-  width: 100%;
-  background: gray;
+  border-top: 1px dotted gainsboro;
+  margin: 1;
+}
+
+.divider p {
+  color: #1c4261;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .card {
@@ -47,9 +95,70 @@ body {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
+.navbar {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 15px !important;
+  font-weight: 500;
+}
+
+.navbar .nav-item {
+  margin-left: 20px;
+}
+
+.icons-navbar i {
+  margin-left: -18px !important;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  background-color: #1d6295;
+  border-radius: 50%;
+}
+
+.icons-navbar img {
+  height: 55px;
+  width: 100%;
+}
+
+.icons-navbar .box {
+  font-size: 16px;
+  width: 249px;
+  height: 46px;
+  padding: 7px;
+  background-color: #1d6295;
+  color: white;
+  border-radius: 7px;
+  line-height: 0.3;
+  text-align: right;
+}
+
 /* Carousel base class */
 .carousel {
+  margin-top: 10px;
   margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .carousel .carousel-control-prev-icon {
+    padding: 20px;
+    margin-top: 250px;
+    margin-left: 200px;
+    background-color: black;
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    height: 10%;
+    width: 50%;
+  }
+  .carousel .carousel-control-next-icon {
+    padding: 20px;
+    margin-top: 250px;
+    margin-right: 200px;
+    background-color: black;
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    height: 10%;
+    width: 50%;
+  }
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -97,8 +206,24 @@ body {
   }
 }
 
-.section4 {
-  position: relative;
+.section3 .card {
+  height: 450px;
+}
+
+@media (min-width: 768px) {
+  .forthSection .text-section,
+  firstSection .text-section {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .forthSection .text-section .text-content,
+  firstSection .text-section .text-content {
+    position: absolute;
+    right: 0;
+    bottom: -120;
+  }
 }
 
 .section4img {
@@ -142,10 +267,10 @@ body {
 
 .section5 .list-group-section5 .list-group-item {
   font-weight: bold;
-  font-size: 20px;
-  line-height: 1.6;
-  color: #1c4261;
-  border-top: 1px solid #1c4261;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1d6295;
+  border-top: 1px solid #1d6295;
   border-left-color: #fff;
   border-right-color: #fff;
 }
@@ -160,6 +285,10 @@ body {
   height: 300px;
 }
 
+.section7 .card {
+  background: none !important;
+}
+
 @media (min-width: 768px) {
   .text-section7 {
     position: relative;
@@ -171,12 +300,13 @@ body {
   }
 }
 
-/* Start Features */
-.features {
-  padding: 100px 0 60px;
+/* Start doctors */
+.doctors {
+  margin-top: 30px;
+  padding: 30px 0;
 }
 
-.features i {
+.doctors i {
   background-color: #1c4261;
   color: #FFF;
   margin-bottom: 10px;
@@ -185,17 +315,87 @@ body {
   line-height: 75px;
 }
 
-.features h3 {
+.doctors h3 {
   color: black;
   font-size: 22px;
 }
 
-.features p {
+.doctors p {
   color: #989898;
   margin-bottom: 40px;
 }
 
-/* End Features */
+/* End doctors */
+footer {
+  margin-top: 70px;
+}
+
+footer .footerbg1 {
+  background-color: #f9f9f9;
+}
+
+footer .footerbg2 {
+  background-color: #f2f2f2;
+}
+
+footer .footerbg3 {
+  background-color: white;
+}
+
+footer .footer-up {
+  padding: 15px;
+  max-height: 110px;
+}
+
+footer .footer-up i {
+  font-size: 30px;
+  margin: 15px;
+}
+
+footer .footer-up .input {
+  width: 250px;
+}
+
+footer .footer-down {
+  padding: 10px;
+  max-height: 60px;
+}
+
+footer .footer-down i {
+  padding: 7px;
+  font-size: 16px;
+  margin: 3px;
+  background-color: #51b0d3;
+  color: white;
+  border-radius: 50%;
+}
+
+footer .footer-down li a {
+  color: #1d6295;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer .footer3 {
+  color: #51b0d3;
+  font-size: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .text-section {
+    position: relative;
+  }
+  .text-section .text-content {
+    position: absolute;
+    right: 0;
+    bottom: -40;
+  }
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 40em) {
