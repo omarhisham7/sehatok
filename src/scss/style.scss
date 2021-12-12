@@ -1,28 +1,10 @@
-// Variables
-$base-color: #51b0d3;
-$secondary-color: #1c4261;
-$text-color:#1d6295;
-@font-face {
-    font-family: 'NeoSansArabic';
-    src: url("../fonts/Neo Sans Arabic Regular.ttf");
-    font-style: normal;
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: 'NeoSansArabic';
-    src: url("../fonts/Neo_Sans_Medium.ttf");
-    font-weight: 500;
-}
-
-
-/* GLOBAL STYLES
--------------------------------------------------- */
-
-* {
-    font-family: NeoSansArabic;
-}
-
+@import 'base/typography';
+@import 'components/carousel';
+@import 'components/Components';
+@import 'layout/footer';
+@import 'layout/nav';
+@import 'utilities/variables';
+@import 'media';
 body {
     background-color: white;
 }
@@ -31,198 +13,8 @@ select {
     direction: rtl !important;
 }
 
-.section-title {
-    font-size: 18px;
-    color: $text-color;
-    font-weight: 500;
-}
-
-.section-text {
-    font-size: 16px;
-}
-
-.card {
-    background-color: #f3f7fa !important;
-    border: none !important;
-    .section-card {
-        background-color: white !important;
-        border: none !important;
-    }
-    .card-title {
-        font-size: 18px;
-        color: $text-color;
-    }
-    .card-text {
-        font-size: 16px;
-    }
-}
-
-.Section {
-    background-color: #f3f7fa;
-}
-
-.btn-secondColor {
-    background-color: $text-color !important;
-    color: white !important;
-    width: 90px;
-    padding: 10px;
-}
-
-// componets
-.divider {
-    margin-top: 30px !important;
-    display: block;
-    margin-top: -80px;
-    padding: 20px;
-    i {
-        font-size: 30px;
-        color: #51b0d3;
-    }
-    hr {
-        // width: 950px;
-        border-top: 1px dotted gainsboro;
-        margin: 1;
-        // margin: 1px 0 1px -150px;
-    }
-    p {
-        color: $secondary-color;
-        font-size: 20px;
-        font-weight: bold;
-    }
-}
-
-.card {
-    background-color: #f3f7fa;
-    margin: 5px;
-}
-
-// end of compents
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-// navbar
-.navbar {
-    font-size: 15px;
-    font-weight: 500;
-    padding: 15px !important;
-    font-weight: 500;
-    .nav-item {
-        margin-left: 20px;
-    }
-}
-
-.icons-navbar {
-    i {
-        margin-left: -18px !important;
-        padding: 10px;
-        font-size: 17px;
-        color: white;
-        background-color: $text-color;
-        border-radius: 50%;
-    }
-    img {
-        height: 55px;
-        width: 100%;
-    }
-    .box {
-        font-size: 16px;
-        width: 249px;
-        height: 46px;
-        padding: 7px;
-        background-color: #1d6295;
-        color: white;
-        border-radius: 7px;
-        line-height: 0.3;
-        text-align: right;
-    }
-}
-
-// end of nav bar
-
-/* Carousel base class */
-
-.carousel {
-    margin-top: 10px;
-    margin-bottom: 4rem;
-    @media (min-width: 768px) {
-        .carousel-control-prev-icon {
-            padding: 20px;
-            margin-top: 250px;
-            margin-left: 200px;
-            background-color: black;
-            filter: invert(1);
-            height: 10%;
-            width: 50%;
-        }
-        .carousel-control-next-icon {
-            padding: 20px;
-            margin-top: 250px;
-            margin-right: 200px;
-            background-color: black;
-            filter: invert(1);
-            height: 10%;
-            width: 50%;
-        }
-    }
-}
-
-
-/* Since positioning the image, we need to help out the caption */
-
-.carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-}
-
-
-/* Declare heights because of positioning of img element */
-
-.carousel-item {
-    height: 32rem;
-}
-
-.carousel-item>img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-}
-
-.caption {
-    height: 100px;
-    width: 800px;
-    background-color: #1c4261;
-    color: black;
-    opacity: 0.8;
-}
-
-.carousel-control-next,
-.carousel-control-prev
-/*, .carousel-indicators */
-
-{
-    position: absolute;
-    filter: invert(100%);
-}
-
-// first section
-@media (min-width: 768px) {
-    .text-section {
-        position: relative;
-        .text-content {
-            position: absolute;
-            right: 0;
-            bottom: -40;
-        }
-    }
-}
-
 // end of first section
-// 2nd section
-//end of 2nd section
-// section 3
+// section 3 المرأه
 .section3 {
     .card {
         height: 450px;
@@ -230,21 +22,7 @@ select {
 }
 
 // end of section 3
-.forthSection,
-firstSection {
-    @media (min-width: 768px) {
-        .text-section {
-            position: relative;
-            display: flex;
-            .text-content {
-                position: absolute;
-                right: 0;
-                bottom: -120;
-            }
-        }
-    }
-}
-
+// start of section 4  الوسائط المتعدده
 .section4img {
     position: block;
 }
@@ -271,6 +49,8 @@ firstSection {
     z-index: 3;
 }
 
+// end of section 4
+// start of section 5 استشارات صحيه
 .section5 {
     .section5header {
         border-radius: 10px;
@@ -300,29 +80,13 @@ firstSection {
         color: white;
         width: 150px;
     }
-}
-
-.section7 {
-    height: 300px;
-    .card {
-        background: none !important;
+    .checkbox-form {
+        margin-right: 20px;
     }
 }
 
-@media (min-width: 768px) {
-    .text-section7 {
-        position: relative;
-        .text-content {
-            position: absolute;
-            right: 0;
-            bottom: -30;
-        }
-    }
-}
-
-
-/* Start doctors */
-
+// end of section 5 
+// start of section 6 doctors
 .doctors {
     margin-top: 30px;
     padding: 30px 0;
@@ -347,107 +111,13 @@ firstSection {
     margin-bottom: 40px
 }
 
-
-/* End doctors */
-
-// start of footer
-footer {
-    margin-top: 70px;
-    .footerbg1 {
-        background-color: #f9f9f9;
-    }
-    .footerbg2 {
-        background-color: #f2f2f2;
-    }
-    .footerbg3 {
-        background-color: white;
-    }
-    .footer-up {
-        // background-color: ;
-        padding: 15px;
-        max-height: 110px;
-        i {
-            font-size: 30px;
-            margin: 15px;
-        }
-        .input {
-            width: 250px;
-        }
-    }
-    .footer-down {
-        // background-color: #f2f2f2;
-        padding: 10px;
-        max-height: 60px;
-        i {
-            padding: 7px;
-            font-size: 16px;
-            margin: 3px;
-            background-color: #51b0d3;
-            color: white;
-            border-radius: 50%;
-        }
-        li a {
-            color: $text-color;
-            font-size: 18px;
-            font-weight: bold;
-        }
-    }
-    .footer3 {
-        color: $base-color;
-        font-size: 15px;
-        justify-content: space-between;
-        height: 40px;
+// end  of section 6 doctors
+//start of section7 أعراض الأمراض
+.section7 {
+    height: 300px;
+    .card {
+        background: none !important;
     }
 }
 
-@media (max-width: 768px) {
-    .text-section {
-        position: relative;
-        .text-content {
-            position: absolute;
-            right: 0;
-            bottom: -40;
-        }
-    }
-}
-
-// end of footer
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
-    }
-    .featurette-heading {
-        font-size: 50px;
-    }
-}
-
-@media (min-width: 62em) {
-    .featurette-heading {
-        margin-top: 7rem;
-    }
-}
-
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-}
-
-
-/*# sourceMappingURL=style.css.map */
+//end of section7

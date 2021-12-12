@@ -1,0 +1,27 @@
+@import '../utilities/variables';
+* {
+    font-family: NeoSansArabic;
+}
+
+.section-title {
+    font-size: 18px;
+    color: $text-color;
+    font-weight: 500;
+}
+
+.section-text {
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'NeoSansArabic';
+    src: url("../fonts/Neo Sans Arabic Regular.ttf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'NeoSansArabic';
+    src: url("../fonts/Neo_Sans_Medium.ttf");
+    font-weight: 500;
+}

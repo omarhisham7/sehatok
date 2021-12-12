@@ -1,0 +1,37 @@
+@import '../utilities/variables';
+// navbar
+.navbar {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px !important;
+    font-weight: 500;
+    .nav-item {
+        margin-left: 20px;
+    }
+}
+
+.icons-navbar {
+    i {
+        margin-left: -18px !important;
+        padding: 10px;
+        font-size: 17px;
+        color: white;
+        background-color: $text-color;
+        border-radius: 50%;
+    }
+    img {
+        height: 55px;
+        width: 100%;
+    }
+    .box {
+        font-size: 16px;
+        width: 249px;
+        height: 46px;
+        padding: 7px;
+        background-color: #1d6295;
+        color: white;
+        border-radius: 7px;
+        line-height: 0.3;
+        text-align: right;
+    }
+}

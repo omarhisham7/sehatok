@@ -1,0 +1,64 @@
+.carousel {
+    margin-top: 10px;
+    margin-bottom: 4rem;
+    @media (min-width: 768px) {
+        .carousel-control-prev-icon {
+            padding: 20px;
+            margin-top: 250px;
+            margin-left: 200px;
+            background-color: black;
+            filter: invert(1);
+            height: 10%;
+            width: 50%;
+        }
+        .carousel-control-next-icon {
+            padding: 20px;
+            margin-top: 250px;
+            margin-right: 200px;
+            background-color: black;
+            filter: invert(1);
+            height: 10%;
+            width: 50%;
+        }
+    }
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.caption {
+    height: 100px;
+    width: 800px;
+    background-color: #1c4261;
+    color: black;
+    opacity: 0.8;
+}
+
+.carousel-control-next,
+.carousel-control-prev
+/*, .carousel-indicators */
+
+{
+    position: absolute;
+    filter: invert(100%);
+}

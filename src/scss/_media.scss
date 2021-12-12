@@ -1,0 +1,135 @@
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+// nav icons 
+@media (max-width: 400px) {
+    .icons-navbar {
+        display: none !important;
+    }
+}
+
+// end of nav icons 
+@media (min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+//start of footer 
+@media (max-width: 600px) {
+    .footer-up {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        h4 {
+            margin-right: -10px !important;
+        }
+        img {
+            margin: 10px 20px 20px 20px;
+        }
+        form input {
+            // margin-left: 20px;
+            width: 200px !important;
+        }
+    }
+    .footer-down {
+        height: 200px !important;
+        .footerIcons {
+            order: 2;
+            justify-content: center !important;
+            text-align: center !important;
+        }
+        .footerUl {
+            order: 1;
+        }
+        ul {
+            justify-content: space-around !important;
+            .ul2nd li {
+                margin: 15px;
+            }
+        }
+        i {
+            align-self: end !important;
+        }
+    }
+    .footer3 {
+        margin-top: 10px !important;
+        height: 100px !important;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-section {
+        position: relative;
+        .text-content {
+            position: absolute;
+            right: 0;
+            bottom: -40;
+        }
+    }
+}
+
+.forthSection,
+.firstSection {
+    @media (min-width: 768px) {
+        .text-section {
+            position: relative;
+            display: flex;
+            .text-content {
+                position: absolute;
+                right: 0;
+                bottom: -120;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .text-section7 {
+        position: relative;
+        .text-content {
+            position: absolute;
+            right: 0;
+            bottom: -30;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .text-section {
+        position: relative;
+        .text-content {
+            position: absolute;
+            right: 0;
+            bottom: -40;
+        }
+    }
+}
