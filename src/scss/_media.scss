@@ -1,6 +1,15 @@
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
+// divider
+@media (max-width: 768px) {
+    .divider {
+        .hr-divider {
+            display: none;
+        }
+    }
+}
+
 // nav icons 
 @media (max-width: 400px) {
     .icons-navbar {
@@ -109,6 +118,20 @@
                 bottom: -120;
             }
         }
+    }
+}
+
+@media (max-width: 767px) {
+    .doctors img {
+        height: 270px !important;
+        width: 100% !important;
+    }
+}
+
+//form checkbox 
+@media (max-width: 767px) {
+    .checkbox-form {
+        margin-right: 10px !important;
     }
 }
 

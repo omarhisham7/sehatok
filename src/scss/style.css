@@ -93,17 +93,30 @@
   -webkit-box-pack: justify !important;
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
+  margin-bottom: 10px;
+  background-size: 900px;
 }
 
 .divider i {
   font-size: 30px;
+  margin-top: 23px;
   color: #51b0d3;
+}
+
+.divider .hr-divider {
+  background-image: url("../images/divider.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 900px;
+  z-index: 3;
+  margin-bottom: 10px;
 }
 
 .divider p {
   color: #1c4261;
   font-size: 20px;
   font-weight: bold;
+  margin-top: 23px;
 }
 
 .card {
@@ -247,6 +260,12 @@ footer .footer3 {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+@media (max-width: 768px) {
+  .divider .hr-divider {
+    display: none;
+  }
+}
+
 @media (max-width: 400px) {
   .icons-navbar {
     display: none !important;
@@ -370,6 +389,19 @@ footer .footer3 {
     position: absolute;
     right: 0;
     bottom: -120;
+  }
+}
+
+@media (max-width: 767px) {
+  .doctors img {
+    height: 270px !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .checkbox-form {
+    margin-right: 10px !important;
   }
 }
 
