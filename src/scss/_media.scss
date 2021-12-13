@@ -2,7 +2,7 @@
 -------------------------------------------------- */
 
 // divider
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .divider {
         .hr-divider {
             display: none;
@@ -11,7 +11,7 @@
 }
 
 // nav icons 
-@media (max-width: 400px) {
+@media (max-width: 992px) {
     .icons-navbar {
         display: none !important;
     }
@@ -95,6 +95,7 @@
     }
 }
 
+//min 767
 @media (min-width: 768px) {
     .text-section {
         position: relative;
@@ -143,6 +144,12 @@
             right: 0;
             bottom: -30;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .section7cards {
+        margin-top: 290px !important;
     }
 }
 

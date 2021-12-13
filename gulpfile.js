@@ -7,6 +7,8 @@ const terser = require('gulp-terser');
 //const imagewebp = require('gulp-webp');
 
 //compile, prefix, and min scss
+
+//error "will compile only style and media .scss"
 function compilescss() {
     return src('src/scss/*.scss')
         .pipe(sass())
@@ -14,6 +16,8 @@ function compilescss() {
         .pipe(minify())
         .pipe(dest('dist/css'))
 };
+
+
 
 // //optimize and move images
 // function optimizeimg() {
