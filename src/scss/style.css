@@ -343,6 +343,7 @@ footer .footer3 .footerText-right {
     margin: 10px 20px 20px 20px;
   }
   .footer-up form input {
+    margin-left: 30px;
     width: 200px !important;
   }
   .footer-down {
@@ -412,7 +413,14 @@ footer .footer3 .footerText-right {
 }
 
 @media (max-width: 767px) {
+  .doctors .circle {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .doctors img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 270px !important;
     width: 100% !important;
   }
@@ -449,6 +457,15 @@ footer .footer3 .footerText-right {
     position: absolute;
     right: 0;
     bottom: -40;
+  }
+}
+
+@media (max-width: 768px) {
+  .rightsideDetails {
+    padding: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 15 !important;
+    width: 100%;
   }
 }
 
