@@ -1,9 +1,20 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'neo-sans-arabic-regular' !important;
+}
+
 @import '../utilities/variables';
 .section-title {
     font-family: "Neo Sans Arabic Medium" !important;
     font-size: 18px;
     color: $text-color;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .section-text {

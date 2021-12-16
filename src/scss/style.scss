@@ -1,118 +1,186 @@
-@import 'base/typography';
-@import 'components/carousel';
-@import 'components/Components';
-@import 'layout/footer';
-@import 'layout/nav';
-@import 'utilities/variables';
-@import 'media';
-select {
-    direction: rtl !important;
-}
-
-// section 3 المرأه
-.section3 {
-    .card {
-        height: 450px;
+    @import 'base/typography';
+    @import 'components/carousel';
+    @import 'components/Components';
+    @import 'layout/footer';
+    @import 'layout/nav';
+    @import 'utilities/variables';
+    @import 'media';
+    .firstSection {
+        h3 {
+            font-weight: bold;
+            font-size: 19 !important;
+        }
+        img {
+            max-width: 100% !important;
+        }
+        .section-card {
+            p {
+                font-size: 17px !important;
+                font-weight: bold;
+            }
+        }
     }
-}
-
-// end of section 3
-// start of section 4  الوسائط المتعدده
-.section4img {
-    position: block;
-}
-
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 200px;
-    background-color: rgba(0, 0, 0, .6);
-    z-index: 2;
-}
-
-.section4icon {
-    margin-top: 10px;
-    margin-left: 5px;
-    padding: 10px;
-    top: 0;
-    left: 0;
-    position: absolute;
-    font-size: 25px;
-    color: white;
-    background-color: #1c4261;
-    border-radius: 260px;
-    z-index: 3;
-}
-
-// end of section 4
-// start of section 5 استشارات صحيه
-.section5 {
-    .section5header {
-        border-radius: 10px;
-        padding: 10px;
-        background-color: #1e6998;
-        height: 90px;
+    
+    .section2 {
+        .rightSection .card-title {
+            font-weight: bold;
+            font-size: 18 !important;
+        }
+        .rightSection .card-text {
+            font-weight: bold;
+        }
+    }
+    
+    // section 3 المرأه
+    .section3 {
+        .card {
+            height: 490px;
+        }
+        .card-title {
+            font-size: 20px !important;
+            font-family: bold !important;
+        }
+    }
+    
+    // end of section 3
+    // start of section 4  الوسائط المتعدده
+    .forthSection {
+        .section-title {
+            color: black !important;
+            font-size: 24px !important;
+            font-weight: bold !important;
+        }
+        .card-body p {
+            font-size: 19px !important;
+            font-weight: bold;
+        }
+    }
+    
+    .section4img {
+        position: block;
+    }
+    
+    .overlay {
+        position: absolute;
         width: 100%;
+        height: 200px;
+        background-color: rgba(0, 0, 0, .6);
+        z-index: 2;
+    }
+    
+    .section4icon {
+        margin-top: 10px;
+        margin-left: 5px;
+        padding: 14px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        font-size: 25px;
         color: white;
+        background-color: $text-color;
+        border-radius: 260px;
+        z-index: 3;
     }
-    .list-group-section5 {
-        padding: 10px;
+    
+    // end of section 4
+    // start of section 5 استشارات صحيه
+    .section5 {
+        .rightside {
+            p {
+                font-size: 15px !important;
+            }
+        }
+        .section5header {
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #1e6998;
+            height: 90px;
+            width: 100%;
+            color: white;
+        }
+        .list-group-section5 {
+            padding: 10px;
+        }
+        .list-group-section5 .list-group-item {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.5;
+            color: $text-color;
+            border-top: 1px solid $text-color;
+            border-left-color: #fff;
+            border-right-color: #fff;
+        }
+        .btn {
+            background-color: #1e6998;
+            color: white;
+            width: 150px;
+        }
+        .checkbox-form {
+            margin-right: 20px;
+        }
+         ::placeholder {
+            color: #a5a5a5 !important;
+        }
+        select {
+            color: #a5a5a5;
+        }
     }
-    .list-group-section5 .list-group-item {
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 1.5;
-        color: $text-color;
-        border-top: 1px solid $text-color;
-        border-left-color: #fff;
-        border-right-color: #fff;
+    
+    // end of section 5 
+    // start of section 6 doctors
+    .doctors {
+        margin-top: 15px;
+        // margin-bottom: 530px !important;
+        padding: 30px 0;
+        .circle {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            overflow: hidden;
+            display: flex;
+        }
     }
-}
-
-.section5 {
-    .btn {
-        background-color: #1e6998;
-        color: white;
-        width: 150px;
+    
+    .doctors i {
+        background-color: #1c4261;
+        color: #FFF;
+        margin-bottom: 10px;
+        width: 80px;
+        height: 80px;
+        line-height: 75px;
     }
-    .checkbox-form {
-        margin-right: 20px;
+    
+    .doctors h3 {
+        color: black;
+        font-size: 22px;
     }
-}
-
-// end of section 5 
-// start of section 6 doctors
-.doctors {
-    margin-top: 15px;
-    // margin-bottom: 530px !important;
-    padding: 30px 0;
-}
-
-.doctors i {
-    background-color: #1c4261;
-    color: #FFF;
-    margin-bottom: 10px;
-    width: 80px;
-    height: 80px;
-    line-height: 75px;
-}
-
-.doctors h3 {
-    color: black;
-    font-size: 22px;
-}
-
-.doctors p {
-    color: #989898;
-}
-
-// end  of section 6 doctors
-//start of section7 أعراض الأمراض
-.section7 {
-    height: 300px;
-    .card {
-        background: none !important;
+    
+    .doctors p {
+        color: #989898;
     }
-}
-
-//end of section7
+    
+    // end  of section 6 doctors
+    //start of section7 أعراض الأمراض
+    .section7 {
+        height: 300px;
+        .card {
+            background: none !important;
+        }
+        p {
+            font-weight: bold !important;
+            font-size: 19px !important;
+        }
+        .text-content7 {
+            .card-title {
+                font-size: 20px !important;
+            }
+            p {
+                font-size: 16px !important
+            }
+        }
+    }
+    
+    //end of section7
+    select {
+        direction: rtl !important;
+    }

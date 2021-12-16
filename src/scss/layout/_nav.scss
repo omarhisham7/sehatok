@@ -3,7 +3,7 @@
 .navbar {
     font-size: 15px;
     font-weight: 500;
-    padding: 15px !important;
+    // padding: 15px !important;
     font-weight: 500;
     .nav-item {
         margin-left: 20px;
@@ -24,10 +24,10 @@
         width: 100%;
     }
     .box {
-        font-size: 16px;
+        font-size: 14 px !important;
         width: 249px;
         height: 46px;
-        padding: 7px;
+        padding: 11px;
         background-color: #1d6295;
         color: white;
         border-radius: 7px;

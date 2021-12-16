@@ -1,8 +1,19 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'neo-sans-arabic-regular' !important;
+}
+
 .section-title {
   font-family: "Neo Sans Arabic Medium" !important;
   font-size: 18px;
   color: #1d6295;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .section-text {
@@ -75,7 +86,7 @@
   height: 100px;
   width: 800px;
   background-color: #1c4261;
-  color: black;
+  color: white !important;
   opacity: 0.8;
 }
 
@@ -167,8 +178,8 @@ footer .footerbg3 {
 }
 
 footer .footer-up {
-  padding: 15px;
-  min-height: 90px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 footer .footer-up i {
@@ -179,6 +190,7 @@ footer .footer-up i {
 footer .footer-up img {
   margin-top: 15px;
   height: 50px;
+  margin-right: 0px;
 }
 
 footer .footer-up .input {
@@ -186,7 +198,7 @@ footer .footer-up .input {
 }
 
 footer .footer-down {
-  padding: 10px;
+  padding-top: 10px;
   height: 60px;
 }
 
@@ -220,10 +232,17 @@ footer .footer3 {
   height: 40px;
 }
 
+footer .footer3 .footerText-left {
+  margin-left: 30px;
+}
+
+footer .footer3 .footerText-right {
+  margin-right: 40px;
+}
+
 .navbar {
   font-size: 15px;
   font-weight: 500;
-  padding: 15px !important;
   font-weight: 500;
 }
 
@@ -246,10 +265,10 @@ footer .footer3 {
 }
 
 .icons-navbar .box {
-  font-size: 16px;
+  font-size: 14 px !important;
   width: 249px;
   height: 46px;
-  padding: 7px;
+  padding: 11px;
   background-color: #1d6295;
   color: white;
   border-radius: 7px;
@@ -432,12 +451,47 @@ footer .footer3 {
   }
 }
 
-select {
-  direction: rtl !important;
+.firstSection h3 {
+  font-weight: bold;
+  font-size: 19 !important;
+}
+
+.firstSection img {
+  max-width: 100% !important;
+}
+
+.firstSection .section-card p {
+  font-size: 17px !important;
+  font-weight: bold;
+}
+
+.section2 .rightSection .card-title {
+  font-weight: bold;
+  font-size: 18 !important;
+}
+
+.section2 .rightSection .card-text {
+  font-weight: bold;
 }
 
 .section3 .card {
-  height: 450px;
+  height: 490px;
+}
+
+.section3 .card-title {
+  font-size: 20px !important;
+  font-family: bold !important;
+}
+
+.forthSection .section-title {
+  color: black !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+}
+
+.forthSection .card-body p {
+  font-size: 19px !important;
+  font-weight: bold;
 }
 
 .section4img {
@@ -455,15 +509,19 @@ select {
 .section4icon {
   margin-top: 10px;
   margin-left: 5px;
-  padding: 10px;
+  padding: 14px;
   top: 0;
   left: 0;
   position: absolute;
   font-size: 25px;
   color: white;
-  background-color: #1c4261;
+  background-color: #1d6295;
   border-radius: 260px;
   z-index: 3;
+}
+
+.section5 .rightside p {
+  font-size: 15px !important;
 }
 
 .section5 .section5header {
@@ -499,9 +557,39 @@ select {
   margin-right: 20px;
 }
 
+.section5 ::-webkit-input-placeholder {
+  color: #a5a5a5 !important;
+}
+
+.section5 :-ms-input-placeholder {
+  color: #a5a5a5 !important;
+}
+
+.section5 ::-ms-input-placeholder {
+  color: #a5a5a5 !important;
+}
+
+.section5 ::placeholder {
+  color: #a5a5a5 !important;
+}
+
+.section5 select {
+  color: #a5a5a5;
+}
+
 .doctors {
   margin-top: 15px;
   padding: 30px 0;
+}
+
+.doctors .circle {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .doctors i {
@@ -528,5 +616,22 @@ select {
 
 .section7 .card {
   background: none !important;
+}
+
+.section7 p {
+  font-weight: bold !important;
+  font-size: 19px !important;
+}
+
+.section7 .text-content7 .card-title {
+  font-size: 20px !important;
+}
+
+.section7 .text-content7 p {
+  font-size: 16px !important;
+}
+
+select {
+  direction: rtl !important;
 }
 /*# sourceMappingURL=style.css.map */
