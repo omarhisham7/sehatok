@@ -21,7 +21,7 @@ footer {
         img {
             margin-top: 15px;
             height: 50px;
-            margin-right: 0px;
+            margin-right: 0px !important;
         }
         .input {
             width: 250px;
@@ -33,6 +33,7 @@ footer {
         .footerIcons {}
         .footerUl {
             justify-content: right;
+            margin-right: -13 !important;
         }
         i {
             padding: 7px;

@@ -90,8 +90,7 @@
     .footer3 {
         margin-top: 10px !important;
         height: 100px !important;
-        justify-content: center;
-        text-align: center;
+        margin-left: 20px !important;
     }
 }
 
@@ -104,6 +103,12 @@
             right: 0;
             bottom: -40;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .section-card {
+        margin: 15px;
     }
 }
 
@@ -122,6 +127,14 @@
     }
 }
 
+.section3 {
+    @media (max-width: 768px) {
+        .card {
+            height: 400px !important;
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .doctors .circle {
         margin-left: auto;
@@ -136,27 +149,39 @@
     }
 }
 
-//form checkbox 
 @media (max-width: 767px) {
-    .checkbox-form {
-        margin-right: 10px !important;
+    .section5 {
+        .rightside .card {
+            margin-top: 5px;
+            margin-right: 25px;
+        }
+    }
+    .section5 button {
+        width: 100% !important;
     }
 }
 
-@media (min-width: 768px) {
-    .text-section7 {
-        position: relative;
-        .text-content {
-            position: absolute;
-            right: 0;
-            bottom: -30;
+//form checkbox 
+@media (max-width: 767px) {
+    .checkbox-form {
+        width: 100%;
+        margin-right: 10px !important;
+        .input {
+            width: 100% !important;
         }
     }
 }
 
 @media (max-width: 768px) {
+    .section7 .text-content7 .card-title {
+        font-size: 20px !important;
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 768px) {
     .section7cards {
-        margin-top: 290px !important;
+        margin-top: 230px !important;
     }
 }
 

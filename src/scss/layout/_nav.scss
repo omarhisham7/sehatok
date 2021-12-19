@@ -11,6 +11,7 @@
 }
 
 .icons-navbar {
+    font-family: 'neo-sans-arabic-regular' !important;
     i {
         margin-left: -18px !important;
         padding: 10px;
@@ -24,7 +25,8 @@
         width: 100%;
     }
     .box {
-        font-size: 14 px !important;
+        font-family: 'neo-sans-arabic-regular';
+        font-size: 14px !important;
         width: 249px;
         height: 46px;
         padding: 11px;

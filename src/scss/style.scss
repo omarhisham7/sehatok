@@ -5,7 +5,19 @@
     @import 'layout/nav';
     @import 'utilities/variables';
     @import 'media';
+    * {
+        .container {
+            padding: 0 15px;
+        }
+        .card-deck {
+            padding: 0px;
+            margin: 0px !important;
+        }
+    }
+    
     .firstSection {
+        padding: 0 0px !important;
+        margin: 0px;
         h3 {
             font-weight: bold;
             font-size: 19 !important;
@@ -15,8 +27,8 @@
         }
         .section-card {
             p {
-                font-size: 17px !important;
-                font-weight: bold;
+                font-size: 18px !important;
+                font-family: 'neo-sans-arabic-medium';
             }
         }
     }
@@ -37,8 +49,8 @@
             height: 490px;
         }
         .card-title {
-            font-size: 20px !important;
-            font-family: bold !important;
+            font-size: 18px !important;
+            font-family: 'neo-sans-arabic-medium' !important;
         }
     }
     
@@ -47,12 +59,13 @@
     .forthSection {
         .section-title {
             color: black !important;
-            font-size: 24px !important;
-            font-weight: bold !important;
+            font-size: 18px !important;
+            font-family: 'neo-sans-arabic-medium';
         }
         .card-body p {
-            font-size: 19px !important;
+            font-size: 16px !important;
             font-weight: bold;
+            font-family: 'neo-sans-arabic-medium';
         }
     }
     
@@ -86,9 +99,7 @@
     // start of section 5 استشارات صحيه
     .section5 {
         .rightside {
-            p {
-                font-size: 15px !important;
-            }
+            p {}
         }
         .section5header {
             border-radius: 10px;
@@ -130,8 +141,10 @@
     // start of section 6 doctors
     .doctors {
         margin-top: 15px;
-        // margin-bottom: 530px !important;
         padding: 30px 0;
+        img {
+            object-fit: cover;
+        }
         .circle {
             border-radius: 50%;
             height: 150px;
@@ -167,16 +180,24 @@
             background: none !important;
         }
         p {
-            font-weight: bold !important;
-            font-size: 19px !important;
+            font-size: 16px !important;
         }
         .text-content7 {
             .card-title {
-                font-size: 20px !important;
+                color: black;
+                font-size: 18px !important;
+                font-family: 'neo-sans-arabic-medium';
             }
             p {
-                font-size: 16px !important
+                font-size: 16px !important;
             }
+        }
+    }
+    
+    .card-deck {
+        .card-text {
+            font-size: 16px !important;
+            font-family: 'neo-sans-arabic-medium' !important;
         }
     }
     
