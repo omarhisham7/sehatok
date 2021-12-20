@@ -1,207 +1,341 @@
-    @import 'base/typography';
-    @import 'components/carousel';
-    @import 'components/Components';
-    @import 'layout/footer';
-    @import 'layout/nav';
-    @import 'utilities/variables';
-    @import 'media';
-    * {
-        .container {
-            padding: 0 15px;
-        }
-        .card-deck {
-            padding: 0px;
-            margin: 0px !important;
+@import 'base/typography';
+@import 'components/carousel';
+@import 'components/Components';
+@import 'layout/footer';
+@import 'layout/nav';
+@import 'utilities/variables';
+@import 'media';
+$mobile: "max-width: 768px";
+.firstSection {
+    padding: 0 0px !important;
+    margin: 0px;
+    h3 {
+        font-weight: bold;
+        font-size: 19 !important;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    .section-card {
+        p {
+            font-size: 18px !important;
+            font-family: 'neo-sans-arabic-medium';
         }
     }
-    
     .firstSection {
-        padding: 0 0px !important;
-        margin: 0px;
-        h3 {
-            font-weight: bold;
-            font-size: 19 !important;
-        }
-        img {
-            max-width: 100% !important;
-        }
-        .section-card {
-            p {
-                font-size: 18px !important;
-                font-family: 'neo-sans-arabic-medium';
+        @media (min-width: 768px) {
+            .text-section {
+                position: relative;
+                display: flex;
+                .text-content {
+                    position: absolute;
+                    right: 0;
+                    bottom: -120;
+                }
             }
         }
     }
-    
+}
+
+.section2 {
+    .rightSection .card-title {
+        font-weight: bold;
+        font-size: 18 !important;
+    }
+    .rightSection .card-text {
+        font-weight: bold;
+    }
+}
+
+@media ($mobile) {
     .section2 {
-        .rightSection .card-title {
-            font-weight: bold;
-            font-size: 18 !important;
-        }
-        .rightSection .card-text {
-            font-weight: bold;
+        .rightSection {
+            margin-top: 10px !important;
         }
     }
-    
-    // section 3 المرأه
-    .section3 {
+}
+
+// section 3 المرأه
+.section3 {
+    .card {
+        height: 490px;
+    }
+    .card-title {
+        font-size: 18px !important;
+        font-family: 'neo-sans-arabic-medium' !important;
+    }
+}
+
+.section3 {
+    @media ($mobile) {
         .card {
-            height: 490px;
-        }
-        .card-title {
-            font-size: 18px !important;
-            font-family: 'neo-sans-arabic-medium' !important;
+            height: 400px !important;
+            margin-top: 10px;
         }
     }
-    
-    // end of section 3
-    // start of section 4  الوسائط المتعدده
+}
+
+// end of section 3
+// start of section 4  الوسائط المتعدده
+.forthSection {
+    .section-title {
+        color: black !important;
+        font-size: 18px !important;
+        font-family: 'neo-sans-arabic-medium';
+    }
+    .card-body p {
+        font-size: 16px !important;
+        font-weight: bold;
+        font-family: 'neo-sans-arabic-medium';
+    }
     .forthSection {
-        .section-title {
-            color: black !important;
-            font-size: 18px !important;
-            font-family: 'neo-sans-arabic-medium';
-        }
-        .card-body p {
-            font-size: 16px !important;
-            font-weight: bold;
-            font-family: 'neo-sans-arabic-medium';
+        @media (min-width: 768px) {
+            .text-section {
+                position: relative;
+                display: flex;
+                .text-content {
+                    position: absolute;
+                    right: 0;
+                    bottom: -120;
+                }
+            }
         }
     }
-    
-    .section4img {
-        position: block;
-    }
-    
-    .overlay {
-        position: absolute;
+}
+
+.section4img {
+    position: block;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 193px;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 2;
+}
+
+.section4icon {
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 14px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    background-color: $text-color;
+    border-radius: 260px;
+    z-index: 3;
+}
+
+// end of section 4
+// start of section 5 استشارات صحيه
+.section5 {
+    .section5header {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #1e6998;
+        height: 90px;
         width: 100%;
-        height: 200px;
-        background-color: rgba(0, 0, 0, .6);
-        z-index: 2;
-    }
-    
-    .section4icon {
-        margin-top: 10px;
-        margin-left: 5px;
-        padding: 14px;
-        top: 0;
-        left: 0;
-        position: absolute;
-        font-size: 25px;
         color: white;
-        background-color: $text-color;
-        border-radius: 260px;
-        z-index: 3;
     }
-    
-    // end of section 4
-    // start of section 5 استشارات صحيه
+    .list-group-section5 {
+        padding: 10px;
+    }
+    .list-group-section5 .list-group-item {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $text-color;
+        border-top: 1px solid $text-color;
+        border-left-color: #fff;
+        border-right-color: #fff;
+    }
+    .btn {
+        background-color: #1e6998;
+        color: white;
+        width: 150px;
+    }
+    .checkbox-form {
+        margin-right: 20px;
+    }
+     ::placeholder {
+        color: #a5a5a5 !important;
+    }
+    select {
+        color: #a5a5a5;
+    }
+}
+
+@media ($mobile) {
     .section5 {
-        .rightside {
-            p {}
-        }
-        .section5header {
-            border-radius: 10px;
-            padding: 10px;
-            background-color: #1e6998;
-            height: 90px;
-            width: 100%;
-            color: white;
-        }
-        .list-group-section5 {
-            padding: 10px;
-        }
-        .list-group-section5 .list-group-item {
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 1.5;
-            color: $text-color;
-            border-top: 1px solid $text-color;
-            border-left-color: #fff;
-            border-right-color: #fff;
+        .rightside .card {
+            margin-top: 5px;
+            margin-right: 25px;
         }
         .btn {
-            background-color: #1e6998;
-            color: white;
-            width: 150px;
+            width: 100% !important;
         }
-        .checkbox-form {
-            margin-right: 20px;
-        }
-         ::placeholder {
-            color: #a5a5a5 !important;
-        }
-        select {
-            color: #a5a5a5;
-        }
-    }
-    
-    // end of section 5 
-    // start of section 6 doctors
-    .doctors {
-        margin-top: 15px;
-        padding: 30px 0;
-        img {
-            object-fit: cover;
-        }
-        .circle {
-            border-radius: 50%;
-            height: 150px;
-            width: 150px;
+        .list-group-section5 li {
+            width: 320px !important;
             overflow: hidden;
-            display: flex;
         }
     }
-    
-    .doctors i {
-        background-color: #1c4261;
-        color: #FFF;
-        margin-bottom: 10px;
-        width: 80px;
-        height: 80px;
-        line-height: 75px;
+}
+
+//form checkbox 
+@media ($mobile) {
+    .checkbox-form {
+        width: 100%;
+        margin-right: 10px !important;
+        .input {
+            width: 100% !important;
+        }
     }
-    
-    .doctors h3 {
-        color: black;
-        font-size: 22px;
+}
+
+// end of section 5 
+// start of section 6 doctors
+.doctors {
+    margin-top: 15px;
+    padding: 30px 0;
+    img {
+        object-fit: cover;
     }
-    
-    .doctors p {
-        color: #989898;
+    .circle {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        overflow: hidden;
+        display: flex;
     }
-    
-    // end  of section 6 doctors
-    //start of section7 أعراض الأمراض
-    .section7 {
-        height: 300px;
-        .card {
-            background: none !important;
+}
+
+.doctors i {
+    background-color: #1c4261;
+    color: #FFF;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    line-height: 75px;
+}
+
+.doctors h3 {
+    color: black;
+    font-size: 22px;
+}
+
+.doctors p {
+    color: #989898;
+}
+
+@media ($mobile) {
+    .doctors .circle {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $base-color;
+    }
+    .doctors img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 270px !important;
+        width: 100% !important;
+    }
+}
+
+// end  of section 6 doctors
+//start of section7 أعراض الأمراض
+.section7 {
+    height: 300px;
+    .card {
+        background: none !important;
+    }
+    p {
+        font-size: 16px !important;
+    }
+    .text-content7 {
+        .card-title {
+            color: black;
+            font-size: 18px !important;
+            font-family: 'neo-sans-arabic-medium';
         }
         p {
             font-size: 16px !important;
         }
-        .text-content7 {
-            .card-title {
-                color: black;
-                font-size: 18px !important;
-                font-family: 'neo-sans-arabic-medium';
-            }
-            p {
-                font-size: 16px !important;
-            }
+    }
+}
+
+.card-deck {
+    .card-text {
+        font-size: 16px !important;
+        font-family: 'neo-sans-arabic-medium' !important;
+    }
+}
+
+@media ($mobile) {
+    .section7 .text-content7 .card-title {
+        font-size: 20px !important;
+        margin-top: 70px;
+    }
+}
+
+@media ($mobile) {
+    .section7cards {
+        margin-top: 230px !important;
+    }
+}
+
+@media ($mobile) {
+    .text-section {
+        position: relative;
+        .text-content {
+            position: absolute;
+            right: 0;
+            bottom: -40;
         }
     }
-    
+}
+
+@media ($mobile) {
+    .rightsideDetails {
+        padding: 0 !important;
+        // margin-top: 50px !important;
+        margin-right: 0 !important;
+        margin-left: 15 !important;
+        width: 100%;
+    }
+}
+
+//end of section7
+select {
+    direction: rtl !important;
+}
+
+* {
+    .container {
+        padding: 0 15px;
+    }
     .card-deck {
-        .card-text {
-            font-size: 16px !important;
-            font-family: 'neo-sans-arabic-medium' !important;
+        padding: 0px;
+        margin: 0px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-section {
+        position: relative;
+        .text-content {
+            position: absolute;
+            right: 0;
+            bottom: -40;
         }
     }
-    
-    //end of section7
-    select {
-        direction: rtl !important;
+}
+
+@media ($mobile) {
+    .section-card {
+        margin: 15px;
     }
+}

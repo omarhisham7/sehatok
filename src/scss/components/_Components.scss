@@ -30,6 +30,14 @@
     }
 }
 
+@media (max-width: 992px) {
+    .divider {
+        .hr-divider {
+            display: none;
+        }
+    }
+}
+
 .card {
     background-color: #f3f7fa;
     // margin: 5px;

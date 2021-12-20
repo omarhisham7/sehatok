@@ -1,9 +1,7 @@
 @import '../utilities/variables';
-// navbar
 .navbar {
     font-size: 15px;
     font-weight: 500;
-    // padding: 15px !important;
     font-weight: 500;
     .nav-item {
         margin-left: 20px;
@@ -35,5 +33,11 @@
         border-radius: 7px;
         line-height: 0.3;
         text-align: right;
+    }
+}
+
+@media (max-width: 992px) {
+    .icons-navbar {
+        display: none !important;
     }
 }

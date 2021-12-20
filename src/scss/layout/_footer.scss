@@ -13,7 +13,6 @@ footer {
     .footer-up {
         padding-top: 15px;
         padding-bottom: 10px;
-        // min-height: 90px;
         i {
             font-size: 30px;
             margin: 15px;
@@ -30,14 +29,13 @@ footer {
     .footer-down {
         padding-top: 10px;
         height: 60px;
-        .footerIcons {}
         .footerUl {
             justify-content: right;
             margin-right: -13 !important;
         }
         i {
             padding: 7px;
-            font-size: 16px;
+            font-size: 16px !important;
             margin: 3px;
             background-color: #51b0d3;
             color: white;
@@ -60,5 +58,49 @@ footer {
         .footerText-right {
             margin-right: 40px;
         }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-up {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        h4 {
+            margin-right: -10px !important;
+        }
+        img {
+            margin: 10px 20px 20px 20px;
+        }
+        form input {
+            margin-left: 30px;
+            width: 200px !important;
+        }
+    }
+    .footer-down {
+        height: 200px !important;
+        .footerIcons {
+            order: 2;
+            justify-content: center !important;
+            text-align: center !important;
+        }
+        .footerUl {
+            order: 1;
+        }
+        ul {
+            // margin: 0px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // height: 200px;
+        }
+        i {
+            align-self: end !important;
+        }
+    }
+    .footer3 {
+        height: 100px !important;
+        margin-left: 20px !important;
+        padding-bottom: 240px !important;
     }
 }
