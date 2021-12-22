@@ -189,6 +189,9 @@ $mobile: "max-width: 768px";
 
 @media ($mobile) {
     .section5 {
+        .rightside {
+            width: calc(100% - 20px);
+        }
         .rightside .card {
             margin-top: 5px;
             margin-right: 25px;

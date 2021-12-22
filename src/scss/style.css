@@ -340,6 +340,15 @@ footer .footer3 .footerText-right {
         -ms-grid-row-align: end !important;
         align-self: end !important;
   }
+  .footer-down .col-md-8 {
+    margin-left: 5px;
+  }
+  .footer-down .column1 .p1 {
+    margin-right: 50px !important;
+  }
+  .footer-down .column1 .p2 {
+    margin-left: 40px !important;
+  }
   .footer3 {
     height: 100px !important;
     margin-left: 20px !important;
@@ -571,6 +580,9 @@ footer .footer3 .footerText-right {
 }
 
 @media (max-width: 768px) {
+  .section5 .rightside {
+    width: calc(100% - 20px);
+  }
   .section5 .rightside .card {
     margin-top: 5px;
     margin-right: 25px;
