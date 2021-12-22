@@ -5,7 +5,12 @@
 @import 'layout/nav';
 @import 'utilities/variables';
 @import 'media';
+//error 
+//error 
 $mobile: "max-width: 768px";
+// can't read from variable folder but othere variables can read like base colour 
+//error 
+//error
 .firstSection {
     padding: 0 0px !important;
     margin: 0px;
@@ -35,6 +40,14 @@ $mobile: "max-width: 768px";
             }
         }
     }
+    // .firstSection {
+    //     @media (max-width: 1100px) {
+    //         .firstSection {
+    //             display: flex;
+    //             flex-direction: column !important;
+    //         }
+    //     }
+    // }
 }
 
 .section2 {
@@ -113,6 +126,12 @@ $mobile: "max-width: 768px";
     height: 193px;
     background-color: rgba(0, 0, 0, .6);
     z-index: 2;
+}
+
+@media(max-width:1250px) {
+    .overlay {
+        display: none;
+    }
 }
 
 .section4icon {
@@ -337,5 +356,17 @@ select {
 @media ($mobile) {
     .section-card {
         margin: 15px;
+    }
+}
+
+@media ($mobile) {
+    .lastlink {
+        margin: 0px !important;
+    }
+    .text-danger {
+        display: none;
+    }
+    .form-check-label {
+        margin-left: 70px;
     }
 }
