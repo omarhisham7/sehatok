@@ -6,7 +6,6 @@
     .nav-item {
         margin-left: 20px;
     }
-
 }
 
 .icons-navbar {
@@ -40,5 +39,22 @@
 @media (max-width: 992px) {
     .icons-navbar {
         display: none !important;
+    }
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+@media(max-width:900px) {
+    .navbar-nav {
+        text-align: right !important;
+        width: 100%;
+    }
+    .navbar .collapse .nav-item {
+        text-align: right !important;
+        margin-bottom: 15px !important;
+        border-bottom: 1px solid gainsboro;
+        // width: 100%;
     }
 }

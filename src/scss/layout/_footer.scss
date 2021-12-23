@@ -130,7 +130,13 @@ footer {
         }
     }
     .footer3 {
+        justify-content: center !important;
+        align-items: center !important;
         height: 100px !important;
         margin-left: 20px !important;
+        text-align: center !important;
+    }
+    .footer3 p {
+        text-align: center !important;
     }
 }

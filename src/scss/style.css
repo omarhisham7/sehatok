@@ -29,10 +29,10 @@
 
 .carousel {
   margin-top: 10px;
-  margin-bottom: 4rem;
+  margin-bottom: 64px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .carousel .carousel-control-prev-icon {
     padding: 20px;
     margin-top: 250px;
@@ -59,13 +59,30 @@
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 48px;
   z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 512px;
+}
+
+@media (max-width: 787px) {
+  .carousel-item {
+    height: 300px;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+  }
+  .carousel {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
 }
 
 .carousel-item > img {
@@ -350,8 +367,18 @@ footer .footer3 .footerText-right {
     margin-left: 40px !important;
   }
   .footer3 {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
     height: 100px !important;
     margin-left: 20px !important;
+    text-align: center !important;
+  }
+  .footer3 p {
+    text-align: center !important;
   }
 }
 
@@ -399,6 +426,22 @@ footer .footer3 .footerText-right {
 @media (max-width: 992px) {
   .icons-navbar {
     display: none !important;
+  }
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .navbar-nav {
+    text-align: right !important;
+    width: 100%;
+  }
+  .navbar .collapse .nav-item {
+    text-align: right !important;
+    margin-bottom: 15px !important;
+    border-bottom: 1px solid gainsboro;
   }
 }
 
