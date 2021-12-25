@@ -52,6 +52,30 @@
             margin-top: 10px;
             margin-bottom: 5px;
         }
+        .carousel img {
+            display: none;
+        }
+        .bg-img {
+            background-image: url("/src/images/slider1.png");
+            background-repeat: no-repeat;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+        }
+        .bg-img-2 {
+            background-image: url("/src/images/slider2.png");
+            background-repeat: no-repeat;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+        }
+        .bg-img-3 {
+            background-image: url("/src/images/slider3.png");
+            background-repeat: no-repeat;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+        }
     }
     
     .carousel-item>img {
