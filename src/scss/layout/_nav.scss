@@ -57,4 +57,10 @@
         border-bottom: 1px solid gainsboro;
         // width: 100%;
     }
+    .navbar .collapse .nav-item:last-child {
+        text-align: right !important;
+        margin-bottom: 15px !important;
+        border-bottom: none;
+        // width: 100%;
+    }
 }

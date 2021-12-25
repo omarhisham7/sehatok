@@ -87,21 +87,21 @@
     display: none;
   }
   .bg-img {
-    background-image: url("/src/images/slider1.png");
+    background-image: url("../images/slider1.png");
     background-repeat: no-repeat;
     height: 300px;
     background-position: center;
     background-size: cover;
   }
   .bg-img-2 {
-    background-image: url("/src/images/slider2.png");
+    background-image: url("../images/slider2.png");
     background-repeat: no-repeat;
     height: 300px;
     background-position: center;
     background-size: cover;
   }
   .bg-img-3 {
-    background-image: url("/src/images/slider3.png");
+    background-image: url("../images/slider3.png");
     background-repeat: no-repeat;
     height: 300px;
     background-position: center;
@@ -467,6 +467,11 @@ footer .footer3 .footerText-right {
     text-align: right !important;
     margin-bottom: 15px !important;
     border-bottom: 1px solid gainsboro;
+  }
+  .navbar .collapse .nav-item:last-child {
+    text-align: right !important;
+    margin-bottom: 15px !important;
+    border-bottom: none;
   }
 }
 
