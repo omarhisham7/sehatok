@@ -1,8 +1,9 @@
 const images = document.querySelectorAll("[data-src]");
 
 const imgOptions = {
-    threshhold: 1
-        // threshhold: 0,
+    threshhold: 0,
+    rootMargin: "300px"
+        // threshhold: 1
         // rootMargin: "0px 0px 300px 0px"
 };
 

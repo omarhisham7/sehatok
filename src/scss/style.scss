@@ -172,30 +172,36 @@ $mobile: "max-width: 768px";
     select {
         color: #a5a5a5;
     }
-    .input-control.success input,
-    .input-control.error textarea {
-        border-color: #09c372;
+    .error {
+        color: red
     }
-    .input-control.error input,
-    .input-control.error textarea {
-        border-color: #ff3860;
+    .input-control.error {
+        border-color: red;
     }
-    .input-control .error {
-        color: #ff3860;
-        font-size: 9px;
-        height: 13px;
-    }
-    .drop-down.success select {
-        border-color: #09c372;
-    }
-    .drop-down select {
-        border-color: #ff3860;
-    }
-    .drop-down .error {
-        color: #ff3860;
-        font-size: 9px;
-        height: 13px;
-    }
+    // .input-control.success input,
+    // .input-control.error textarea {
+    //     border-color: #09c372;
+    // }
+    // .input-control.error input,
+    // .input-control.error textarea {
+    //     border-color: #ff3860;
+    // }
+    // .input-control .error {
+    //     color: #ff3860;
+    //     font-size: 9px;
+    //     height: 13px;
+    // }
+    // .drop-down.success select {
+    //     border-color: #09c372;
+    // }
+    // .drop-down select {
+    //     border-color: #ff3860;
+    // }
+    // .drop-down .error {
+    //     color: #ff3860;
+    //     font-size: 9px;
+    //     height: 13px;
+    // }
 }
 
 @media ($mobile) {
