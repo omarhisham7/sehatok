@@ -650,6 +650,36 @@ footer .footer3 .footerText-right {
   color: #a5a5a5;
 }
 
+.section5 .input-control.success input,
+.section5 .input-control.error textarea {
+  border-color: #09c372;
+}
+
+.section5 .input-control.error input,
+.section5 .input-control.error textarea {
+  border-color: #ff3860;
+}
+
+.section5 .input-control .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+
+.section5 .drop-down.success select {
+  border-color: #09c372;
+}
+
+.section5 .drop-down select {
+  border-color: #ff3860;
+}
+
+.section5 .drop-down .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+
 @media (max-width: 768px) {
   .section5 .rightside {
     width: calc(100% - 20px);
