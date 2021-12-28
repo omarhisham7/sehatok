@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- main css -->
-    <link rel="stylesheet" href="src/scss/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- bootstrap 4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <title>صحتك</title>
 </head>
 
@@ -447,35 +448,36 @@
                                     <div class="p-2">
                                         <form id="form" action="/">
                                             <div class="form-group input-control">
-                                                <input type="text" class="form-control text-right" id="name" name="name" placeholder="الأسم">
+                                                <input data-rule-minlength="2" data-rule-maxlength="4" data-msg-minlength="At least two chars" data-msg-maxlength="At most fours chars" type="text" class="form-control text-right" id="name" name="name" placeholder="الأسم" minlength="2" required>
+                                                <label id="name" for="name"></label>
                                                 <div id="error" class="error"></div>
                                             </div>
                                             <div class="form-group input-control">
-                                                <input type="email" class="form-control text-right" id="mail" name="mail" placeholder=" البريد الالكتروني">
+                                                <input type="email" class="form-control text-right" id="mail" name="mail" placeholder=" البريد الالكتروني" required>
                                                 <div class="error"></div>
                                             </div>
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="">
-                                                        <select id="select-year" class="form-control drop-down  text-right">
+                                                        <select id="selectYear" name="selectYear" class="form-control drop-down  text-right">
                                                         <option value="" selected>سنه</option>
                                                         <option value="20">20</option>         
                                                         <div id="error" class="error"></div>
-                                                    </select> <small class="error" style="color:red;"></small>
+                                                    </select>
                                                     </div>
 
 
                                                 </div>
                                                 <div class="col">
                                                     <div class="input-control">
-                                                        <input type="text" class="form-control text-right" id="age" name="age" placeholder="العمر">
+                                                        <input type="number" class="form-control text-right" id="age" name="age" placeholder="العمر" required>
                                                         <div class="error"></div>
                                                     </div>
 
                                                 </div>
                                             </div>
                                             <div class="form-group mt-3 mb-3">
-                                                <select id="select-relationship" class="form-control drop-down text-right">
+                                                <select id="selectRelationship" name="selectRelationship" class="form-control drop-down text-right">
                                                         <option value="" selected>الحاله الأجتماعيه</option>
                                                         <option value="married">married</option>
                                                         <option>...</option>
@@ -486,7 +488,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col">
-                                                    <select id="select-country" class="form-control drop-down text-right">
+                                                    <select id="selectCountry" name="selectCountry" class="form-control drop-down text-right">
                                                         <option value="" selected>بلد الأقامه</option>
                                                         <option value="jordan">jordan</option>
                                                         <option value="egypt">egypt</option>
@@ -496,7 +498,7 @@
                                                     <small class="error" style="color:red;"></small>
                                                 </div>
                                                 <div class="col">
-                                                    <select id="select-country2" class="form-control drop-down  text-right p-2">
+                                                    <select id="selectCountry2" name="selectCountry2" class="form-control drop-down  text-right p-2">
                                                         <option value="" selected>البلد</option>
                                                         <option value="jordan">jordan</option>
                                                         <option value="egypt">egypt</option>
@@ -511,14 +513,14 @@
                                                 <p class="section-title "> أولا في المواد المنشورة على موقمنا عن إجابة لسؤالك. استوف المعلومات الشخصية والصحية المتعلقة بالحالة المرضية محل الاستشارة. اكتب سؤالك باللفة العربية.</p>
                                             </div>
                                             <div class="form-group input-control">
-                                                <textarea maxlength="50" id="textarea" class="textarea   input-control form-control" placeholder="السؤال /الحد الأقصى" class="form-control text-right" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                <textarea maxlength="50" id="textarea" name="textarea" class="textarea   input-control form-control" placeholder="السؤال /الحد الأقصى" class="form-control text-right" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 <div class="error"></div>
                                             </div>
                                             <div class="form-group form-check d-flex justify-content-between ">
                                                 <label class="mr-5 text-danger" for=""> سيتم أضهار الأسم </label>
                                                 <div class="checkbox-form">
                                                     <label class="form-check-label mr-2" for="exampleCheck1">أشترك بالنشره البريديه</label>
-                                                    <input type="checkbox" class="form-check-input ml-1 " id="exampleCheck1">
+                                                    <input type="checkbox" name="checkbox" class="form-check-input ml-1 " id="exampleCheck1">
                                                 </div>
                                             </div>
 
@@ -773,7 +775,10 @@
         <!-- end of footer -->
 
 
-
+        <!-- jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <!-- jquery validation -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
         <script src="src/js/form-validation.js"></script>
         <script src="src/js/lazy-load.js"></script>
         <!-- bootstrap js -->

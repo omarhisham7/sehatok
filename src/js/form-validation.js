@@ -25,11 +25,18 @@ var validator = $("#form").validate({
 
     },
     messages: {
-        name: "Please Enter your name !",
-        selectYear: "Please enter your year !",
-        selectRelationship: "Please select aRelationship ",
-        selectCountry: "Please select a country",
-        selectCountry2: "Please select a country",
+        name: "الرجاء ادخال الاسم",
+        mail: {
+            required: "هذا الحقل مطلوب",
+            email: "الرجاء ادخال بريد الكتروني صحيح"
+        },
+        age: "هذا الحقل مطلوب",
+        selectYear: "هذا الحقل مطلوب",
+        selectRelationship: "هذا الحقل مطلوب ",
+        selectCountry: "هذا الحقل مطلوب",
+        selectCountry2: "هذا الحقل مطلوب",
+        textarea: 'هذا الحقل مطلوب'
+
 
 
     }
