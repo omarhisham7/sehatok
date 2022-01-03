@@ -3,8 +3,9 @@ jQuery.validator.setDefaults({
     success: "valid"
 });
 var validator = $("#form").validate({
+
     rules: {
-        name: "required",
+        required: true,
         mail: {
             required: true,
             email: true
@@ -41,3 +42,32 @@ var validator = $("#form").validate({
 
     }
 });
+
+
+// method 1:
+
+$(document).ready(function() {
+
+    if ($('input.required').val() == '') {
+        $('.form-submit').prop('disabled', 'disabled');
+    }
+    $("input.required , select ,textarea").on('blur keyup change', function() {
+        if ($("[name='name']").valid() && $("[name='mail']").valid() && $("[name='age']").valid() &&
+            $("[name='selectYear']").valid() && $("[name='selectRelationship']").valid() && $("[name='selectCountry']").valid() &&
+            $("[name='selectCountry2']").valid() && $("[name='textarea']").valid()
+
+
+
+        ) {
+            $('.form-submit').prop('disabled', false);
+        } else {
+
+            $('.form-submit').prop('disabled', 'disabled');
+        }
+
+
+    });
+
+
+});
+
